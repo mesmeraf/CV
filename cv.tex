@@ -24,7 +24,7 @@
 \makecvtitle
 
 \section{Compétences}
-\cvitem{Programmation}{Python, R et Bioconductor, bash, django, JAVA, HTML/CSS, \LaTeX, SQL.}
+\cvitem{Programmation}{Python, R, bash, django, JAVA, HTML/CSS, \LaTeX, SQL.}
 \cvitem{Versioning}{Git, GitLab, GitHub.}
 \cvitem{Pipelines}{Snakemake.}
 \cvitem{Conteneurs}{Technologie Singularity.}
@@ -159,7 +159,8 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 \renewcommand{\refname}{Publications}
 \renewcommand{\bibliographyitemlabel}{\arabic{enumiv}.~}
 \nocite{*}
-\bibliographystyle{plain}
+% \bibliographystyle mis à 'unsrt' au lieu de 'plain' pour obtenir un classement biblio décroisssant
+\bibliographystyle{unsrt}
 \bibliography{cv_biblio}    
 
 \section{Langues}
@@ -167,9 +168,9 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 \cvitemwithcomment{Espagnol}{Lu, parlé, écrit}{9 mois en Espagne}
 
 \section{Centres d'intérêt}
+\cvitem{}{Cinéphile}
 \cvitem{}{Photographie}
-\cvitem{}{Travail du bois}
+\cvitem{}{FabLab}
 \cvitem{}{Moto}
-\cvitem{}{Aviation}
 
 \end{document}
