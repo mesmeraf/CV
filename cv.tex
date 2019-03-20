@@ -11,7 +11,7 @@
 \title{Bioinformaticien} 
 \address{~~~~~~25, place Dupuy}{31000 Toulouse}{}
 \phone[mobile]{06~50~77~65~31}
-\phone[fixed]{05~67~69~04~57}
+% \phone[fixed]{05~67~69~04~57}
 \email{nicolajea@yahoo.fr}
 \extrainfo{Né le 29/09/1976 à Angers. Titulaire de la Fonction publique hospitalière.}
  
@@ -24,10 +24,10 @@
 \makecvtitle
 
 \section{Compétences}
-\cvitem{Programmation}{Python, R et Bioconductor, bash, django, JAVA, HTML/CSS, \LaTeX, SQL.}
+\cvitem{Programmation}{Python, R, bash, django, JAVA, HTML/CSS, \LaTeX, SQL.}
 \cvitem{Versioning}{Git, GitLab, GitHub.}
 \cvitem{Pipelines}{Snakemake.}
-\cvitem{Conteneurs}{Technologie Singularity}
+\cvitem{Conteneurs}{Technologie Singularity.}
 \cvitem{Cluster de calcul}{Solutions HPC et slurm.}
 \cvitem{Data mining}{SVM, réseaux de neurones, clustering hiérarchique, arbres décisionnels, règles d'association.}
 \cvitem{Séquençage haut-débit}{Technologies Oxford Nanopore, PacBio, Illumina et 454}
@@ -37,14 +37,13 @@
 \cventry{depuis 08/2015}{Bioinformaticien}{Virologie - CHU Purpan}{Toulouse}{}
 {
 \begin{itemize}
-\item Adaptation et mise en œuvre d'un pipe-line de découverte de variants de résistances minoritaires sur des données de séquençage haut-débit des virus de l'hépatite C.
-\item Recherche de motifs induisant un tropisme X4 sur les séquences du gène de l'enveloppe du VIH-1 par apprentissage automatique supervisé.
-\item Développement de programmes à façon pour le traitement de données biologiques.
-\item Assemblage de génomes De Novo à partir de données de séquençage haut-débit.
-\item Étude de variants à partir de données de séquençage haut-débit amplicons.
-\item Adaptation du logiciel PyroVir aux données de séquençage haut-débit Illumina et Ion-Torrent.
-\item Biostatistiques et visualisation de données.
-\item Utilisation de services distants et lancements de calculs haute performance sur le cluster de calcul de l'INRA.
+\item Mise en place de pipelines Snakemake de diagnostic (Prédiction du tropisme du VIH-1), de recherche (Évolution des quasi-espèces virales, assemblage de Novo de clones viraux) sur données Illumina et d'annotation automatique de génomes de Virus de l'Hépatite E (VHE).
+\item Reconstruction de génomes complets du VHE sur données PacBio et Oxford Nanopore.
+\item Analyse des insertions/duplications dans la région hyper-variable du VHE.
+\item Collaboration au développement de \emph{BD NGS}, outil commun CHU-Oncopole, permettant la gestion des runs NGS et du lancement automatique des pipelines associés.
+\item Adaptation et mise en œuvre d'un pipeline de découverte de variants de résistances minoritaires sur des données de séquençage haut-débit des virus de l'hépatite C.
+\item Développement de solutions à façon pour le traitement de données biologiques.
+\item Développement et adaptation du logiciel PyroVir aux données Illumina et Ion-Torrent.
 \end{itemize}}
 
 \cventry{01/2015 - 07/2015}{Stage de bioinformatique}{Laboratoire de Microbiologie et Génétiques Moléculaires - CNRS}{Toulouse}{}{
@@ -59,15 +58,8 @@
 
 \cventry{08/2010 - 08/2013}{Technicien de biologie moléculaire}{Virologie - CHU Purpan}{Toulouse}{}{
 \begin{itemize}
-\item Développements en bioinformatique :
-	\begin{itemize}
-	\item Logiciel \textbf{PyroVir} d’analyse de données de pyroséquençage (454) pour la détermination du Tropisme du VIH (\textbf{Brevet}).
-	\item Logiciel de calcul de taux d’erreurs des séquençages haut-débit.
-	\item Logiciel de calcul de taux d’évolution de séquences de VIH issues de Pyroséquençage.
-	\end{itemize}
+\item Logiciel \textbf{PyroVir} d’analyse de données de pyroséquençage (454) pour la détermination du Tropisme du VIH (\textbf{Brevet}).
 \item Étude de variants à partir de données de pyroséquençage amplicons.
-\item Biostatistiques et visualisation de données.
-\item Utilisation de services distants et lancements de calculs haute performance sur le cluster de calcul de l'INRA.
 \item Mise en œuvre de séquençage haut-débit (technologies Illumina et 454).
 \item Étude du tropisme du VIH par séquençage haut-débit.
 \item Phylogénétique et recherche de résistances du VIH-1 et des virus des hépatites.
@@ -75,12 +67,12 @@
 \end{itemize}
 }
 
-\clearpage
+% \clearpage
 
 \cventry{2005 - 07/2010}{Technicien de biologie moléculaire}{Neurogénétique - Hôpital A. Trousseau (APHP)}{Paris}{Centre de référence maladies rares.}{
 \begin{itemize}
 \item Recherche de mutations par séquençage Sanger dans le cadre du diagnostic de maladies touchant le système nerveux central chez l'enfant
-\item Diagnostics prénataux.
+\item Diagnostics pré-nataux.
 \item Gestion d'un séquenceur Sanger 96 capillaires.
 \item Mise en œuvre d'une technique HRM (High Resolution Melting) pour la détection de la présence de variants. 
 \end{itemize}
@@ -141,7 +133,7 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 \cventry{09/2009 - 07/2012}{Licence Bioinformatique}{CNAM, cours du soir}{Paris}{}{
 \begin{itemize}
 \item Rapport de stage : PyroTrop, Logiciel d'interprétation de l'analyse du tropisme du VIH-1 par pyroséquençage.
-\item Projet tuteuré : Phylog, Logiciel de reconstruction d'arbres phylogénétique par les méthodes basées sur les distances.
+\item Projet tuteuré : Phylog, Logiciel de reconstruction d'arbres phylogénétique, méthodes basées sur les distances.
 \item Obtention du Business Language Testing Service (BULATS).
 \end{itemize}
 }
@@ -160,7 +152,8 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 \renewcommand{\refname}{Publications}
 \renewcommand{\bibliographyitemlabel}{\arabic{enumiv}.~}
 \nocite{*}
-\bibliographystyle{plain}
+% \bibliographystyle mis à 'unsrt' au lieu de 'plain' pour obtenir une chronologie biblio décroisssante
+\bibliographystyle{unsrt}
 \bibliography{cv_biblio}    
 
 \section{Langues}
@@ -168,9 +161,9 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 \cvitemwithcomment{Espagnol}{Lu, parlé, écrit}{9 mois en Espagne}
 
 \section{Centres d'intérêt}
-\cvitem{}{Photographie}
-\cvitem{}{Travail du bois}
-\cvitem{}{Moto}
-\cvitem{}{Aviation}
+\cvitem{}{Cinéphile: Bénévole sur le projet de cinéma éphémère \color{blue}{\href{http://www.laforetelectrique.com/le-projet/}{La forêt électrique}}.}
+\cvitem{}{FabLab: Projet Proteios sound, mise en musique des protéines.}
+\cvitem{}{Photographie.}
+\cvitem{}{Moto.}
 
 \end{document}
