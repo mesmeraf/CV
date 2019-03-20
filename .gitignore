@@ -1,7 +1,8 @@
-*.aux
-*.bbl
-*.blg
-*.log
-*.out
-*.pdf
-*.synctex.gz
+cv.aux
+cv.bbl
+cv.blg
+cv.log
+cv.out
+cv.pdf
+cv.synctex.gz
+cv.run.xml
