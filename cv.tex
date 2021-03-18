@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,sans]{moderncv}
+\documentclass[11pt,a4paper,sans,colorlinks,linkcolor=yellow]{moderncv}
 
 \moderncvstyle{banking} 
 \moderncvcolor{blue}
@@ -9,10 +9,9 @@
 \usepackage[french]{babel}
 \name{Nicolas}{JEANNE}
 \title{Bioinformaticien} 
-\address{~~~~~~25, place Dupuy}{31000 Toulouse}{}
+\address{~~~~~~7, avenue Camille Pujol}{31500 Toulouse}{}
 \phone[mobile]{06~50~77~65~31}
-% \phone[fixed]{05~67~69~04~57}
-\email{nicolajea@yahoo.fr}
+\email{jeanne.n@chu-toulouse.fr}
 \extrainfo{Né le 29/09/1976 à Angers. Titulaire de la Fonction publique hospitalière.}
  
 
@@ -21,29 +20,41 @@
 \renewcommand{\Frlabelitemi}{\scriptsize\color{blue}{$\circ$}}
 
 \begin{document}
+
+% set color for hyperlinks
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{urlcolor=links}
+
 \makecvtitle
 
 \section{Compétences}
-\cvitem{Programmation}{Python, R, bash, django, JAVA, HTML/CSS, \LaTeX, SQL.}
+\cvitem{Programmation}{Python, bash, django, HTML/CSS, \LaTeX, R, JAVA, SQL}
 \cvitem{Versioning}{Git, GitLab, GitHub.}
 \cvitem{Pipelines}{Snakemake.}
 \cvitem{Conteneurs}{Technologie Singularity.}
 \cvitem{Cluster de calcul}{Solutions HPC et slurm.}
 \cvitem{Data mining}{SVM, réseaux de neurones, clustering hiérarchique, arbres décisionnels, règles d'association.}
-\cvitem{Séquençage haut-débit}{Technologies Oxford Nanopore, PacBio, Illumina et 454}
-\cvitem{Biologie Moléculaire}{Séquençage Sanger, Séquençage NGS: De Novo, Amplicons, RNA-Seq.}
+\cvitem{Séquençage haut-débit}{Technologies PacBio, Illumina, et Roche 454}
+\cvitem{Biologie Moléculaire}{Séquençage NGS: De Novo, Amplicons, RNA-Seq, Séquençage Sanger.}
 
 \section{Expérience professionnelle}
 \cventry{depuis 08/2015}{Bioinformaticien}{Virologie - CHU Purpan}{Toulouse}{}
 {
 \begin{itemize}
-\item Mise en place de pipelines Snakemake de diagnostic (Prédiction du tropisme du VIH-1), de recherche (Évolution des quasi-espèces virales, assemblage de Novo de clones viraux) sur données Illumina et d'annotation automatique de génomes de Virus de l'Hépatite E (VHE).
+\item Analyse de variants SARS-CoV2 à partir de génomes complets reconstruits sur données PacBio et Illumina.
+\item Développement de pipelines Snakemake sur données long et short reads:
+	\begin{itemize}
+	\item Interprétation des résistances du VIH-1 aux antirétroviraux.
+	\item Prédiction du tropisme du VIH-1.
+	\item Évolution des quasi-espèces virales.
+	\item Assemblage de Novo de clones viraux.
+	\item Annotation automatique de génomes de Virus de l'Hépatite E (VHE).
+	\item Détection de variants de résistances minoritaires pour le virus de l'hépatite C.
+	\end{itemize}
 \item Reconstruction de génomes complets du VHE sur données PacBio et Oxford Nanopore.
 \item Analyse des insertions/duplications dans la région hyper-variable du VHE.
-\item Collaboration au développement de \emph{BD NGS}, outil commun CHU-Oncopole, permettant la gestion des runs NGS et du lancement automatique des pipelines associés.
-\item Adaptation et mise en œuvre d'un pipeline de découverte de variants de résistances minoritaires sur des données de séquençage haut-débit des virus de l'hépatite C.
-\item Développement de solutions à façon pour le traitement de données biologiques.
-\item Développement et adaptation du logiciel PyroVir aux données Illumina et Ion-Torrent.
+\item Collaboration au développement de \emph{BD NGS}, outil commun CHU et ICR de Toulouse, permettant la gestion des runs NGS, du lancement automatique des pipelines associés et de l'enregistrement en base de donnée des résultats.
+\item Adaptation du logiciel PyroVir aux données NGS (long et short reads).
 \end{itemize}}
 
 \cventry{01/2015 - 07/2015}{Stage de bioinformatique}{Laboratoire de Microbiologie et Génétiques Moléculaires - CNRS}{Toulouse}{}{
@@ -69,7 +80,7 @@
 
 % \clearpage
 
-\cventry{2005 - 07/2010}{Technicien de biologie moléculaire}{Neurogénétique - Hôpital A. Trousseau (APHP)}{Paris}{Centre de référence maladies rares.}{
+\cventry{2005 - 07/2010}{Technicien de biologie moléculaire}{Neurogénétique - Hôpital Armand Trousseau (APHP)}{Paris}{Centre de référence maladies rares.}{
 \begin{itemize}
 \item Recherche de mutations par séquençage Sanger dans le cadre du diagnostic de maladies touchant le système nerveux central chez l'enfant
 \item Diagnostics pré-nataux.
@@ -85,7 +96,7 @@
 \end{itemize}
 }
 
-\cventry{2002 - 2003}{Technicien d'histocompatibilité}{Institut A. Frappier}{Montréal Canada}{}{
+\cventry{2002 - 2003}{Technicien d'histocompatibilité}{Institut Armand Frappier}{Montréal Canada}{}{
 \begin{itemize}
 \item Typage HLA. 
 \item Gestion de banque de patients en attente de greffe.
@@ -121,7 +132,7 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 }
 
 \section{Formation}
-\cventry{09/2014 - 07/2015}{Master 2 Bioinformatique et Biologie des Systèmes}{Université Paul Sabatier, formation continue}{Toulouse}{\textit{major de promotion}}{
+\cventry{09/2014 - 07/2015}{Master 2 Bioinformatique et Biologie des Systèmes}{Université Paul Sabatier, formation continue}{Toulouse}{\textbf{major de promotion}}{
 \begin{itemize}
 \item Rapport de stage : Étude par RNA-Seq du métabolisme de l'ARN messager dans les opérons, rôle des BIME chez \textit{E. coli}.
 \item Revue : Common tools comparison for differential expression analysis : edgeR, DESeq and DESeq2.
@@ -153,16 +164,17 @@ Suivi d'une cohorte de patients sous traitement anti-rétroviral.
 \renewcommand{\bibliographyitemlabel}{\arabic{enumiv}.~}
 \nocite{*}
 % \bibliographystyle mis à 'unsrt' au lieu de 'plain' pour obtenir une chronologie biblio décroisssante
-\bibliographystyle{unsrt}
-\bibliography{cv_biblio}    
+% \bibliographystyle{unsrt}
+\bibliographystyle{ieeetr}
+\bibliography{cv_these}    
 
 \section{Langues}
 \cvitemwithcomment{Anglais}{Lu, parlé, écrit}{BULATS CEF/ALTE Level : C1/4}
-\cvitemwithcomment{Espagnol}{Lu, parlé, écrit}{9 mois en Espagne}
+\cvitemwithcomment{Espagnol}{Lu, parlé, écrit}{famille espagnole, 1 an en Espagne}
 
 \section{Centres d'intérêt}
-\cvitem{}{Cinéphile: Bénévole sur le projet de cinéma éphémère \color{blue}{\href{http://www.laforetelectrique.com/le-projet/}{La forêt électrique}}.}
-\cvitem{}{FabLab: Projet Proteios sound, mise en musique des protéines.}
+\cvitem{}{Cinéphile: cinéma d'auteur et indépendant, bénévole sur le projet de cinéma éphémère \href{https://laforetelectrique.com/}{La forêt électrique}.}
+\cvitem{}{FabLab: Projet \href{https://github.com/njeanne/proteios_sounds}{Proteios sound}, mise en musique des protéines.}
 \cvitem{}{Photographie.}
 \cvitem{}{Moto.}
 
